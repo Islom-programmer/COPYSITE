@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopySite</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- Swiper CSS  -->
+    <link rel="stylesheet" href="../swiper@8.4.7/swiper-bundle.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Style CSS  -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 110px;
+        margin-bottom: 10px;
+        margin-trim: 10px;
+    }
+
+    .video-item {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        height: 100%;
+    }
+
+    .video-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .video-thumbnail {
+        width: 100%;
+        height: 200px;
+        background-color: #ddd;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .video-info {
+        padding: 15px;
+        height: 100%;
+    }
+
+    .video-title {
+        margin: 0 0 10px;
+        color: #333;
+    }
+
+    .video-description {
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .video-duration {
+        color: #888;
+        font-size: 0.9em;
+    }
+</style>
+
+<body>
+
+    <!-- START: Header  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <i class="bi bi-book"></i>
+                CopySite
+            </a>
+
+            <!-- Menu Btn -->
+            <button class="navbar-toggler fs-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mt-5 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            Asosiy
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../organish/organish.html">
+                            O'rganish
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../components.html">
+                            Componentlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../shablonlar.html">
+                            Shablonlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../domenlar.html">
+                            Domenlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../akkaunt.html">
+                            Account
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="video-list">
+            <a href="./saythaqida.html">
+
+                <div class="video-item">
+                    <div class="video-thumbnail" style="background-image: url('/placeholder.svg?height=200&width=300')">
+                    </div>
+                    <div class="video-info">
+                        <h2 class="video-title">Sayt haqida malumot</h2>
+                        <p class="video-description">Bu bo'limda siz sayt haqida toliq malumot olishingiz va undan qay
+                            yollarda va qanday foydalana olishingizni bilib olishingiz mumkun.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./companenhaqida.html">
+
+                <div class="video-item">
+                    <div class="video-thumbnail" style="background-image: url('/placeholder.svg?height=200&width=300')">
+                    </div>
+                    <div class="video-info">
+                        <h2 class="video-title">Components bolimi</h2>
+                        <p class="video-description">Bu bo'limda siz Components bolimidan qanda foydalana olishingizni
+                            organasiz.</p>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="./shablonhaqida.html">
+
+                <div class="video-item">
+                    <div class="video-thumbnail" style="background-image: url('/placeholder.svg?height=200&width=300')">
+                    </div>
+                    <div class="video-info">
+                        <h2 class="video-title">Shablonlar bolimi</h2>
+                        <p class="video-description">Bu bo'limda siz shablonlardan qanday foydalana olishingizni organasiz.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./domenhaqida.html">
+
+                <div class="video-item">
+                    <div class="video-thumbnail" style="background-image: url('/placeholder.svg?height=200&width=300')">
+                    </div>
+                    <div class="video-info">
+                        <h2 class="video-title">Domenlar bolimi</h2>
+                        <p class="video-description">Bu bo'limda siz domenlardan qanday foydalana olishingizni organasiz.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span style="color: white;" class="logo_name">CopySite</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">O'rganish</li>
+                    <li><a href="#">Sayt haqida</a></li>
+                    <li><a href="#">Kompanentlar haqida</a></li>
+                    <li><a href="#">Shablonlar haqida</a></li>
+                    <li><a href="#">Domenlar haqida</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Componentlar</li>
+                    <li><a href="#">Header</a></li>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Footer</a></li>
+                    <li><a href="#">Akkaunt</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Shablonlar</li>
+                    <li><a href="#">Html, Css </a></li>
+                    <li><a href="#">React</a></li>
+                    <li><a href="#">Next js</a></li>
+                    <li><a href="#">Tailwind</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Domenlar</li>
+                    <li><a href="#">UZ domenlar</a></li>
+                    <li><a href="#">RU domenlar</a></li>
+                    <li><a href="#">COM domenlar</a></li>
+                    <li><a href="#">Noyob Domenlar</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Qonun qoidalar</li>
+                    <li><a href="#">Foydalanish shartlari</a></li>
+                    <li><a href="#">Biz bilan bog'lanish</a></li>
+                    <li><a href="#">Takliflar</a></li>
+                    <li><a href="#">Bu sayt nima uchun hizmat qiladi!</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- END: Footer  -->
+
+
+
+    <!-- jQuery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Validator to check the form for completeness  -->
+    <script src="../npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../swiper@8.4.7/swiper-bundle.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

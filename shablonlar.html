@@ -22,8 +22,6 @@
     <!-- Style CSS  -->
     <link rel="stylesheet" href="css/style.css">
     <style>
-       
-    
         .template-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -32,7 +30,7 @@
             margin-bottom: 20px;
             margin-trim: 10px;
         }
-    
+
         .template-card {
             background-color: #fff;
             border-radius: 8px;
@@ -40,68 +38,69 @@
             overflow: hidden;
             transition: transform 0.3s ease;
         }
-    
+
         .template-card:hover {
             transform: translateY(-5px);
         }
-    
+
         .template-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
-    
+
         .template-info {
             padding: 20px;
         }
-    
+
         .template-name {
             font-size: 1.2em;
             font-weight: bold;
             margin-bottom: 10px;
         }
-    
+
         .template-description {
             color: #666;
             margin-bottom: 15px;
         }
-    
+
         .template-features {
             list-style-type: none;
             padding: 0;
             margin-bottom: 15px;
         }
-    
+
         .template-features li {
             margin-bottom: 5px;
         }
-    
+
         .template-features li::before {
             content: "✓";
             color: #4CAF50;
             margin-right: 5px;
         }
-    
+
         .template-price {
             font-size: 1.5em;
             font-weight: bold;
             color: #0066cc;
             margin-bottom: 15px;
         }
-    
-        .button {
+
+
+        .btn {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #0066cc;
+            background-color: var(--primary-color);
             color: #fff;
+            /* padding: 10px 20px 10px 20px; */
+            margin-bottom: 10px;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
-            text-align: center;
+            transition: background-color 0.3s ease;
         }
-    
-        .button:hover {
-            background-color: #0052a3;
+
+        .btn:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
@@ -134,7 +133,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./organish.html">
+                        <a class="nav-link" aria-current="page" href="./organish/organish.html">
                             O'rganish
                         </a>
                     </li>
@@ -154,8 +153,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./akkaunt.html">
-                            Account
+                        <a style="font-size: 40px;margin-top: -13px;" class="nav-link" aria-current="page"
+                            href="./akkaunt.html">
+                            ❤️
                         </a>
                     </li>
 
@@ -168,100 +168,107 @@
 
 
 
-<div class="container">
-    <div class="template-grid">
-        <div class="template-card">
-            <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
-            <div class="template-info">
-                <div class="template-name">Business Pro</div>
-                <p class="template-description">Professional template for corporate websites</p>
-                <ul class="template-features">
-                    <li>Responsive design</li>
-                    <li>5 page layouts</li>
-                    <li>Contact form</li>
-                    <li>SEO optimized</li>
-                </ul>
-                <div class="template-price">$99</div>
-                <a href="#" class="button">Purchase Now</a>
+    <div class="container">
+        <div class="template-grid">
+            <div class="template-card" data-id="1">
+                <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Business Pro</div>
+                    <p class="template-description">Professional template for corporate websites</p>
+                    <ul class="template-features">
+                        <li>Responsive design</li>
+                        <li>5 page layouts</li>
+                        <li>Contact form</li>
+                        <li>SEO optimized</li>
+                    </ul>
+                    <div class="template-price">$99</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" class="like-btn"
+                        href="#">❤️</a>
+                </div>
             </div>
-        </div>
-        <div class="template-card">
+            <div class="template-card" data-id="2">
 
-            <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
-            <div class="template-info">
-                <div class="template-name">Business Pro</div>
-                <p class="template-description">Professional template for corporate websites</p>
-                <ul class="template-features">
-                    <li>Responsive design</li>
-                    <li>5 page layouts</li>
-                    <li>Contact form</li>
-                    <li>SEO optimized</li>
-                </ul>
-                <div class="template-price">$99</div>
-                <a href="#" class="button">Purchase Now</a>
+                <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Business Pro</div>
+                    <p class="template-description">Professional template for corporate websites</p>
+                    <ul class="template-features">
+                        <li>Responsive design</li>
+                        <li>5 page layouts</li>
+                        <li>Contact form</li>
+                        <li>SEO optimized</li>
+                    </ul>
+                    <div class="template-price">$99</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
             </div>
-        </div>
-        <div class="template-card">
-            <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
-            <div class="template-info">
-                <div class="template-name">Business Pro</div>
-                <p class="template-description">Professional template for corporate websites</p>
-                <ul class="template-features">
-                    <li>Responsive design</li>
-                    <li>5 page layouts</li>
-                    <li>Contact form</li>
-                    <li>SEO optimized</li>
-                </ul>
-                <div class="template-price">$99</div>
-                <a href="#" class="button">Purchase Now</a>
+            <div class="template-card" data-id="3">
+                <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Business Pro</div>
+                    <p class="template-description">Professional template for corporate websites</p>
+                    <ul class="template-features">
+                        <li>Responsive design</li>
+                        <li>5 page layouts</li>
+                        <li>Contact form</li>
+                        <li>SEO optimized</li>
+                    </ul>
+                    <div class="template-price">$99</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
             </div>
-        </div>
-        <div class="template-card">
-            <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
-            <div class="template-info">
-                <div class="template-name">Business Pro</div>
-                <p class="template-description">Professional template for corporate websites</p>
-                <ul class="template-features">
-                    <li>Responsive design</li>
-                    <li>5 page layouts</li>
-                    <li>Contact form</li>
-                    <li>SEO optimized</li>
-                </ul>
-                <div class="template-price">$99</div>
-                <a href="#" class="button">Purchase Now</a>
+            <div class="template-card" data-id="4">
+                <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Business Pro</div>
+                    <p class="template-description">Professional template for corporate websites</p>
+                    <ul class="template-features">
+                        <li>Responsive design</li>
+                        <li>5 page layouts</li>
+                        <li>Contact form</li>
+                        <li>SEO optimized</li>
+                    </ul>
+                    <div class="template-price">$99</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
             </div>
-        </div>
-        <div class="template-card">
-            <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
-            <div class="template-info">
-                <div class="template-name">Business Pro</div>
-                <p class="template-description">Professional template for corporate websites</p>
-                <ul class="template-features">
-                    <li>Responsive design</li>
-                    <li>5 page layouts</li>
-                    <li>Contact form</li>
-                    <li>SEO optimized</li>
-                </ul>
-                <div class="template-price">$99</div>
-                <a href="#" class="button">Purchase Now</a>
+            <div class="template-card" data-id="5">
+                <img src="https://picsum.photos/200" alt="Business Pro Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Business Pro</div>
+                    <p class="template-description">Professional template for corporate websites</p>
+                    <ul class="template-features">
+                        <li>Responsive design</li>
+                        <li>5 page layouts</li>
+                        <li>Contact form</li>
+                        <li>SEO optimized</li>
+                    </ul>
+                    <div class="template-price">$99</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
             </div>
-        </div>
-        <div class="template-card">
-            <img src="https://picsum.photos/200" alt="E-commerce Deluxe Template" class="template-image">
-            <div class="template-info">
-                <div class="template-name">E-commerce Deluxe</div>
-                <p class="template-description">Feature-rich template for online stores</p>
-                <ul class="template-features">
-                    <li>Product catalog</li>
-                    <li>Shopping cart</li>
-                    <li>Payment gateway integration</li>
-                    <li>Customer reviews</li>
-                </ul>
-                <div class="template-price">$149</div>
-                <a href="#" class="button">Purchase Now</a>
+            <div class="template-card" data-id="6">
+                <img src="https://picsum.photos/200" alt="E-commerce Deluxe Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">E-commerce Deluxe</div>
+                    <p class="template-description">Feature-rich template for online stores</p>
+                    <ul class="template-features">
+                        <li>Product catalog</li>
+                        <li>Shopping cart</li>
+                        <li>Payment gateway integration</li>
+                        <li>Customer reviews</li>
+                    </ul>
+                    <div class="template-price">$149</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
             </div>
-        </div>
-            <div class="template-card">
+            <div class="template-card" data-id="7">
                 <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
                 <div class="template-info">
                     <div class="template-name">Portfolio Showcase</div>
@@ -273,90 +280,123 @@
                         <li>Social media integration</li>
                     </ul>
                     <div class="template-price">$79</div>
-                    <a href="#" class="button">Purchase Now</a>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
                 </div>
             </div>
-                <div class="template-card">
-                    <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
-                    <div class="template-info">
-                        <div class="template-name">Portfolio Showcase</div>
-                        <p class="template-description">Elegant template for creatives and artists</p>
-                        <ul class="template-features">
-                            <li>Gallery layout</li>
-                            <li>Project showcase</li>
-                            <li>About me section</li>
-                            <li>Social media integration</li>
-                        </ul>
-                        <div class="template-price">$79</div>
-                        <a href="#" class="button">Purchase Now</a>
-                    </div>
+            <div class="template-card" data-id="8">
+                <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Portfolio Showcase</div>
+                    <p class="template-description">Elegant template for creatives and artists</p>
+                    <ul class="template-features">
+                        <li>Gallery layout</li>
+                        <li>Project showcase</li>
+                        <li>About me section</li>
+                        <li>Social media integration</li>
+                    </ul>
+                    <div class="template-price">$79</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
                 </div>
-                    <div class="template-card">
-                        <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
-                        <div class="template-info">
-                            <div class="template-name">Portfolio Showcase</div>
-                            <p class="template-description">Elegant template for creatives and artists</p>
-                            <ul class="template-features">
-                                <li>Gallery layout</li>
-                                <li>Project showcase</li>
-                                <li>About me section</li>
-                                <li>Social media integration</li>
-                            </ul>
-                            <div class="template-price">$79</div>
-                            <a href="#" class="button">Purchase Now</a>
-                        </div>
-                    </div>
-                        <div class="template-card">
-                            <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
-                            <div class="template-info">
-                                <div class="template-name">Portfolio Showcase</div>
-                                <p class="template-description">Elegant template for creatives and artists</p>
-                                <ul class="template-features">
-                                    <li>Gallery layout</li>
-                                    <li>Project showcase</li>
-                                    <li>About me section</li>
-                                    <li>Social media integration</li>
-                                </ul>
-                                <div class="template-price">$79</div>
-                                <a href="#" class="button">Purchase Now</a>
-                            </div>
-                        </div>
-                            <div class="template-card">
-                                <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
-                                <div class="template-info">
-                                    <div class="template-name">Portfolio Showcase</div>
-                                    <p class="template-description">Elegant template for creatives and artists</p>
-                                    <ul class="template-features">
-                                        <li>Gallery layout</li>
-                                        <li>Project showcase</li>
-                                        <li>About me section</li>
-                                        <li>Social media integration</li>
-                                    </ul>
-                                    <div class="template-price">$79</div>
-                                    <a href="#" class="button">Purchase Now</a>
-                                </div>
-                            </div>
-        <div class="template-card">
-            <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
-            <div class="template-info">
-                <div class="template-name">Portfolio Showcase</div>
-                <p class="template-description">Elegant template for creatives and artists</p>
-                <ul class="template-features">
-                    <li>Gallery layout</li>
-                    <li>Project showcase</li>
-                    <li>About me section</li>
-                    <li>Social media integration</li>
-                </ul>
-                <div class="template-price">$79</div>
-                <a href="#" class="button">Purchase Now</a>
+            </div>
+            <div class="template-card" data-id="9">
+                <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Portfolio Showcase</div>
+                    <p class="template-description">Elegant template for creatives and artists</p>
+                    <ul class="template-features">
+                        <li>Gallery layout</li>
+                        <li>Project showcase</li>
+                        <li>About me section</li>
+                        <li>Social media integration</li>
+                    </ul>
+                    <div class="template-price">$79</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
+            </div>
+            <div class="template-card" data-id="10">
+                <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Portfolio Showcase</div>
+                    <p class="template-description">Elegant template for creatives and artists</p>
+                    <ul class="template-features">
+                        <li>Gallery layout</li>
+                        <li>Project showcase</li>
+                        <li>About me section</li>
+                        <li>Social media integration</li>
+                    </ul>
+                    <div class="template-price">$79</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
+            </div>
+            <div class="template-card" data-id="11">
+                <img src="https://picsum.photos/200" alt="Portfolio Showcase Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Portfolio Showcase</div>
+                    <p class="template-description">Elegant template for creatives and artists</p>
+                    <ul class="template-features">
+                        <li>Gallery layout</li>
+                        <li>Project showcase</li>
+                        <li>About me section</li>
+                        <li>Social media integration</li>
+                    </ul>
+                    <div class="template-price">$79</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+                </div>
+            </div>
+            <div class="template-card" data-id="13">
+                <img src="https://picsum.photos/201" alt="Business Template" class="template-image">
+                <div class="template-info">
+                    <div class="template-name">Business Template</div>
+                    <p class="template-description">Perfect template for businesses and agencies</p>
+                    <ul class="template-features">
+                        <li>Responsive design</li>
+                        <li>Contact form</li>
+                        <li>Service showcase</li>
+                    </ul>
+                    <div class="template-price">$99</div>
+                    <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                    <a style="font-size: 40px; margin-bottom: 200px; margin-left: 20px;" class="like-btn"
+                        href="#">❤️</a>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </div><script>
+        // Like tugmasini bosish funksiyasi
+        const likeButtons = document.querySelectorAll('.like-btn');
 
+        likeButtons.forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
 
+                const card = this.closest('.template-card');
+                const templateId = card.getAttribute('data-id');
+                const templateName = card.querySelector('.template-name').textContent;
+                const templatePrice = card.querySelector('.template-price').textContent;
 
+                // Like qilingan template ma'lumotlarini yaratamiz
+                const likedTemplate = {
+                    card: templatecard,
+                    id: templateId,
+                    name: templateName,
+                    price: templatePrice
+                };
 
+                // Oldin saqlangan like qilingan mahsulotlarni olish
+                let likedTemplates = JSON.parse(localStorage.getItem('likedTemplates')) || [];
+
+                // Mahsulotni saqlash
+                likedTemplates.push(likedTemplate);
+                localStorage.setItem('likedTemplates', JSON.stringify(likedTemplates));
+
+                alert(`${templateName} like qilindi va like sahifasiga qo'shildi!`);
+            });
+        });
+    </script>
 
 
 
@@ -439,27 +479,27 @@
                 </ul>
             </div>
         </div>
-    
+
     </footer>
     <!-- END: Footer  -->
-    
-    
-    
+
+
+
     <!-- jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    
+
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
-    
+
     <!-- Validator to check the form for completeness  -->
     <script src="npm/jquery-validation%401.19.3/dist/jquery.validate.js"></script>
-    
+
     <!-- Swiper JS -->
     <script src="swiper%408.4.7/swiper-bundle.min.js"></script>
-    
+
     <!-- Script JS -->
     <script src="js/script.js"></script>
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>

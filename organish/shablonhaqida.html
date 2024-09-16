@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopySite</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- Swiper CSS  -->
+    <link rel="stylesheet" href="../swiper@8.4.7/swiper-bundle.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Style CSS  -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+
+    /* Video darsliklar section */
+    .video-darsliklar {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .video-darsliklar h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #2c3e50;
+    }
+
+    .darsliklar-container {
+        display: flex;
+        gap: 30px;
+    }
+
+    /* Mavzular ro'yxati */
+    .mavzular-list {
+        flex: 1;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .mavzu-item {
+        padding: 15px;
+        border-bottom: 1px solid #e0e0e0;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .mavzu-item:last-child {
+        border-bottom: none;
+    }
+
+    .mavzu-item:hover {
+        background-color: #f5f5f5;
+    }
+
+    .mavzu-item h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #2c3e50;
+    }
+
+    .mavzu-item p {
+        margin: 5px 0 0;
+        font-size: 0.9rem;
+        color: #7f8c8d;
+    }
+
+    /* Video player */
+    .video-player {
+        flex: 2;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 nisbat */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-info {
+        padding: 20px;
+    }
+
+    .video-info h3 {
+        margin: 0 0 10px;
+        font-size: 1.5rem;
+        color: #2c3e50;
+    }
+
+    .video-info p {
+        margin: 0;
+        font-size: 1rem;
+        color: #7f8c8d;
+    }
+
+    /* Responsive dizayn uchun media query */
+    @media (max-width: 768px) {
+        .darsliklar-container {
+            flex-direction: column;
+        }
+
+        .video-darsliklar h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
+<body>
+
+    <!-- START: Header  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <i class="bi bi-book"></i>
+                CopySite
+            </a>
+
+            <!-- Menu Btn -->
+            <button class="navbar-toggler fs-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mt-5 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            Asosiy
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../organish/organish.html">
+                            O'rganish
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../components.html">
+                            Componentlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../shablonlar.html">
+                            Shablonlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../domenlar.html">
+                            Domenlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../akkaunt.html">
+                            Account
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+<section class="video-darsliklar">
+    <h2>Video Darsliklar</h2>
+    <div class="darsliklar-container">
+        <div class="mavzular-list">
+            <div class="mavzu-item active" data-video="../o0kpQZDgeImVFNIZRJfBVPL0VsWO7OCuAEB6EQ.mp4"
+                data-title="HTML asoslari"
+                data-description="Bu darsda HTML haqida asosiy tushunchalar va uning strukturasi haqida o'rganamiz.">
+                <h3>HTML asoslari</h3>
+                <p>Davomiyligi: 15:30</p>
+            </div>
+            <div class="mavzu-item" data-video="/video2.mp4" data-title="CSS bilan stillar berish"
+                data-description="CSS yordamida veb-sahifalarni qanday chiroyli qilish mumkinligini o'rganamiz.">
+                <h3>CSS bilan stillar berish</h3>
+                <p>Davomiyligi: 20:45</p>
+            </div>
+            <div class="mavzu-item" data-video="/video3.mp4" data-title="Responsive dizayn"
+                data-description="Turli qurilmalarga moslashuvchan veb-sahifalarni yaratishni o'rganamiz.">
+                <h3>Responsive dizayn</h3>
+                <p>Davomiyligi: 18:20</p>
+            </div>
+            <div class="mavzu-item" data-video="/video4.mp4" data-title="JavaScript asoslari"
+                data-description="JavaScript dasturlash tilining asosiy tushunchalari va sintaksisi haqida o'rganamiz.">
+                <h3>JavaScript asoslari</h3>
+                <p>Davomiyligi: 22:10</p>
+            </div>
+        </div>
+        <div class="video-player">
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    <source src="../o0kpQZDgeImVFNIZRJfBVPL0VsWO7OCuAEB6EQ.mp4" type="video/mp4">
+                    Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 id="videoTitle">HTML asoslari</h3>
+                <p id="videoDescription">Bu darsda HTML haqida asosiy tushunchalar va uning strukturasi haqida
+                    o'rganamiz.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Barcha mavzularni olamiz
+    const mavzuItems = document.querySelectorAll('.mavzu-item');
+
+    // Hozirgi video player elementlarini olamiz
+    const videoPlayer = document.getElementById('videoPlayer');
+    const videoTitle = document.getElementById('videoTitle');
+    const videoDescription = document.getElementById('videoDescription');
+
+    // Har bir mavzu ustida bosish funksiyasi
+    mavzuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            // Hozirgi aktiv elementni olib tashlash
+            document.querySelector('.mavzu-item.active').classList.remove('active');
+            // Yangilangan aktiv element
+            this.classList.add('active');
+
+            // Video, sarlavha va izohlarni yangilash
+            const newVideoSrc = this.getAttribute('data-video');
+            const newTitle = this.getAttribute('data-title');
+            const newDescription = this.getAttribute('data-description');
+
+            // Video manzili, sarlavha va izohni yangilash
+            videoPlayer.src = newVideoSrc;
+            videoTitle.textContent = newTitle;
+            videoDescription.textContent = newDescription;
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span style="color: white;" class="logo_name">CopySite</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">O'rganish</li>
+                    <li><a href="#">Sayt haqida</a></li>
+                    <li><a href="#">Kompanentlar haqida</a></li>
+                    <li><a href="#">Shablonlar haqida</a></li>
+                    <li><a href="#">Domenlar haqida</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Componentlar</li>
+                    <li><a href="#">Header</a></li>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Footer</a></li>
+                    <li><a href="#">Akkaunt</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Shablonlar</li>
+                    <li><a href="#">Html, Css </a></li>
+                    <li><a href="#">React</a></li>
+                    <li><a href="#">Next js</a></li>
+                    <li><a href="#">Tailwind</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Domenlar</li>
+                    <li><a href="#">UZ domenlar</a></li>
+                    <li><a href="#">RU domenlar</a></li>
+                    <li><a href="#">COM domenlar</a></li>
+                    <li><a href="#">Noyob Domenlar</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Qonun qoidalar</li>
+                    <li><a href="#">Foydalanish shartlari</a></li>
+                    <li><a href="#">Biz bilan bog'lanish</a></li>
+                    <li><a href="#">Takliflar</a></li>
+                    <li><a href="#">Bu sayt nima uchun hizmat qiladi!</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </footer>
+    <!-- END: Footer  -->
+    
+    
+    
+    <!-- jQuery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <!-- Validator to check the form for completeness  -->
+    <script src="../npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="../swiper@8.4.7/swiper-bundle.min.js"></script>
+    
+    <!-- Script JS -->
+    <script src="../js/script.js"></script>
+    
+    </body>
+    
+    </html>
