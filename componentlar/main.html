@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopySite</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- Swiper CSS  -->
+    <link rel="stylesheet" href="../swiper%408.4.7/swiper-bundle.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../npm/bootstrap-icons%401.8.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Style CSS  -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+  
+
+    .subtitle {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+    }
+
+    .component-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 120px;
+        margin-bottom: 10px;
+        margin-trim: 10px;
+    }
+
+    .component-card {
+        background-color: var(--card-background);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .component-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .component-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .component-details {
+        padding: 20px;
+    }
+
+    .component-title {
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+    }
+
+    .component-description {
+        color: var(--text-color);
+        margin-bottom: 15px;
+    }
+
+    .component-features {
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+
+    .component-features li {
+        margin-bottom: 5px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .component-features li::before {
+        content: "✓";
+        color: var(--primary-color);
+        position: absolute;
+        left: 0;
+    }
+
+    .component-price {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--accent-color);
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: #fff;
+        /* padding: 10px 20px 10px 20px; */
+        margin-bottom: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #2980b9;
+    }
+
+    @media (max-width: 768px) {
+        .component-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- START: Header  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="./index.html" class="logo">
+                <i class="bi bi-book"></i>
+                CopySite
+            </a>
+
+            <!-- Menu Btn -->
+            <button class="navbar-toggler fs-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mt-5 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            Asosiy
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../organish/organish.html">
+                            O'rganish
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../components.html">
+                            Componentlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../shablonlar.html">
+                            Shablonlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../domenlar.html">
+                            Domenlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-size: 40px;margin-top: -13px;" class="nav-link" aria-current="page" href="./akkaunt.html">
+                            ❤️
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+<div class="container">
+   
+
+    <div class="component-grid">
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Advanced Datepicker" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Advanced Datepicker</h2>
+                <p class="component-description">A flexible and feature-rich datepicker component for your web
+                    applications.</p>
+                <ul class="component-features">
+                    <li>Multiple date selection</li>
+                    <li>Range picker functionality</li>
+                    <li>Customizable themes</li>
+                    <li>Localization support</li>
+                </ul>
+                <p class="component-price">$49.99</p>
+                <a  style="color: black;" href="#" class="btn">Sotib Olish</a>
+                                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#" >❤️</a>
+
+            </div>
+        </div>
+
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Responsive Data Table" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Responsive Data Table</h2>
+                <p class="component-description">A powerful and responsive data table component with advanced features.
+                </p>
+                <ul class="component-features">
+                    <li>Sorting and filtering</li>
+                    <li>Pagination</li>
+                    <li>Editable cells</li>
+                    <li>Export to CSV/Excel</li>
+                </ul>
+                <p class="component-price">$79.99</p>
+                <a  style="color: black; margin-bottom: 10px;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Interactive Chart" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Interactive Chart</h2>
+                <p class="component-description">A versatile charting component for creating stunning data
+                    visualizations.</p>
+                <ul class="component-features">
+                    <li>Multiple chart types</li>
+                    <li>Animated transitions</li>
+                    <li>Responsive design</li>
+                    <li>Real-time updates</li>
+                </ul>
+                <p class="component-price">$89.99</p>
+                <a  style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Drag and Drop File Uploader" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Drag and Drop File Uploader</h2>
+                <p class="component-description">An intuitive file upload component with drag and drop functionality.
+                </p>
+                <ul class="component-features">
+                    <li>Multiple file upload</li>
+                    <li>Progress tracking</li>
+                    <li>File type validation</li>
+                    <li>Image preview</li>
+                </ul>
+                <p class="component-price">$59.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Advanced Datepicker" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Advanced Datepicker</h2>
+                <p class="component-description">A flexible and feature-rich datepicker component for your web
+                    applications.</p>
+                <ul class="component-features">
+                    <li>Multiple date selection</li>
+                    <li>Range picker functionality</li>
+                    <li>Customizable themes</li>
+                    <li>Localization support</li>
+                </ul>
+                <p class="component-price">$49.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Responsive Data Table" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Responsive Data Table</h2>
+                <p class="component-description">A powerful and responsive data table component with advanced features.
+                </p>
+                <ul class="component-features">
+                    <li>Sorting and filtering</li>
+                    <li>Pagination</li>
+                    <li>Editable cells</li>
+                    <li>Export to CSV/Excel</li>
+                </ul>
+                <p class="component-price">$79.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Interactive Chart" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Interactive Chart</h2>
+                <p class="component-description">A versatile charting component for creating stunning data
+                    visualizations.</p>
+                <ul class="component-features">
+                    <li>Multiple chart types</li>
+                    <li>Animated transitions</li>
+                    <li>Responsive design</li>
+                    <li>Real-time updates</li>
+                </ul>
+                <p class="component-price">$89.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Drag and Drop File Uploader" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Drag and Drop File Uploader</h2>
+                <p class="component-description">An intuitive file upload component with drag and drop functionality.
+                </p>
+                <ul class="component-features">
+                    <li>Multiple file upload</li>
+                    <li>Progress tracking</li>
+                    <li>File type validation</li>
+                    <li>Image preview</li>
+                </ul>
+                <p class="component-price">$59.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Advanced Datepicker" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Advanced Datepicker</h2>
+                <p class="component-description">A flexible and feature-rich datepicker component for your web
+                    applications.</p>
+                <ul class="component-features">
+                    <li>Multiple date selection</li>
+                    <li>Range picker functionality</li>
+                    <li>Customizable themes</li>
+                    <li>Localization support</li>
+                </ul>
+                <p class="component-price">$49.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Responsive Data Table" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Responsive Data Table</h2>
+                <p class="component-description">A powerful and responsive data table component with advanced features.
+                </p>
+                <ul class="component-features">
+                    <li>Sorting and filtering</li>
+                    <li>Pagination</li>
+                    <li>Editable cells</li>
+                    <li>Export to CSV/Excel</li>
+                </ul>
+                <p class="component-price">$79.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Interactive Chart" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Interactive Chart</h2>
+                <p class="component-description">A versatile charting component for creating stunning data
+                    visualizations.</p>
+                <ul class="component-features">
+                    <li>Multiple chart types</li>
+                    <li>Animated transitions</li>
+                    <li>Responsive design</li>
+                    <li>Real-time updates</li>
+                </ul>
+                <p class="component-price">$89.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+        
+        <div class="component-card">
+            <img src="https://picsum.photos/200" alt="Drag and Drop File Uploader" class="component-image">
+            <div class="component-details">
+                <h2 class="component-title">Drag and Drop File Uploader</h2>
+                <p class="component-description">An intuitive file upload component with drag and drop functionality.
+                </p>
+                <ul class="component-features">
+                    <li>Multiple file upload</li>
+                    <li>Progress tracking</li>
+                    <li>File type validation</li>
+                    <li>Image preview</li>
+                </ul>
+                <p class="component-price">$59.99</p>
+                <a style="color: black;" href="#" class="btn">Sotib Olish</a>
+                <a style="font-size: 40px ;margin-bottom: 200px; margin-left: 20px;" href="#">❤️</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span style="color: white;" class="logo_name">CopySite</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">O'rganish</li>
+                    <li><a href="#">Sayt haqida</a></li>
+                    <li><a href="#">Kompanentlar haqida</a></li>
+                    <li><a href="#">Shablonlar haqida</a></li>
+                    <li><a href="#">Domenlar haqida</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Componentlar</li>
+                    <li><a href="#">Header</a></li>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Footer</a></li>
+                    <li><a href="#">Akkaunt</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Shablonlar</li>
+                    <li><a href="#">Html, Css </a></li>
+                    <li><a href="#">React</a></li>
+                    <li><a href="#">Next js</a></li>
+                    <li><a href="#">Tailwind</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Domenlar</li>
+                    <li><a href="#">UZ domenlar</a></li>
+                    <li><a href="#">RU domenlar</a></li>
+                    <li><a href="#">COM domenlar</a></li>
+                    <li><a href="#">Noyob Domenlar</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Qonun qoidalar</li>
+                    <li><a href="#">Foydalanish shartlari</a></li>
+                    <li><a href="#">Biz bilan bog'lanish</a></li>
+                    <li><a href="#">Takliflar</a></li>
+                    <li><a href="#">Bu sayt nima uchun hizmat qiladi!</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </footer>
+    <!-- END: Footer  -->
+    
+    
+    
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Validator to check the form for completeness  -->
+    <script src="npm/jquery-validation%401.19.3/dist/jquery.validate.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="swiper%408.4.7/swiper-bundle.min.js"></script>
+    
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+    
+    </body>
+    
+    </html>
